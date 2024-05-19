@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAN Image Generator</title>
+    <link rel="stylesheet" href="{% static "css/styles.css" %}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>64x64 Image Generator</h1>
+            <p>Generate unique 64x64 images using a GAN model</p>
+        </header>
+        <main>
+            <button id="generateButton">Generate Image</button>
+            <div class="image-container">
+                <div id="loader" class="loader"></div>
+                <img id="generatedImage" src="" alt="Generated Image" hidden>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2024 GAN Image Generator</p>
+        </footer>
+    </div>
+    <script src="{% static "js/script.js" %}"></script>
+</body>
+</html>
